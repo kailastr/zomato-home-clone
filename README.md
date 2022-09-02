@@ -1,0 +1,1 @@
+This is a clone page of zomato using only html and css
