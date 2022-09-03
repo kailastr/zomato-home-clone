@@ -16,8 +16,8 @@
 .navbar{
     display: flex;
     justify-content: space-between;
-    height: 10px;
-    padding: 15px 48px;
+    height: 60px;
+    padding: 15px 200px;
 }
 
 .navbar_menu{
@@ -40,6 +40,171 @@
     display: none;
 }
 
+
+.section_hero_content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-items: center;
+    height: calc(60vh - 60px);
+}
+
+.section_hero_logo{
+    width: 300px;
+}
+
+.section_hero_heading{
+    text-align: center;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.section_hero_input_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 50%;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.section_hero_input_location, .section_hero_input_restaurant{
+    padding: 5px;
+    outline: none;
+    border: none;
+}
+
+.section_hero_input_location{
+    width: 35%;
+}
+
+.section_hero_input_restaurant{
+    width: 65%;
+    border-left: 1px solid #909090;
+}
+
+.container{
+    width: 80%;
+    margin: 10px auto;
+}
+
+.we_offer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 40px;
+}
+
+.we_offer_card{
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.we_offer_card:hover{
+    transform: scale(1.05);
+}
+
+.we_offer_card img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.we_offer_content{
+    padding: 10px;
+    font-weight: 350;
+}
+
+.we_offer_content h3{
+    font-weight: 450;
+}
+
+.collections h1{
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.collections .collection_subheading{
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.collection_subheading span:nth-child(2){
+    color: rgb(227, 97, 74);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.collections_card_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.collections_card_container .collection_card{
+    height: 300px;
+    width: 240px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.collection_card_content{
+    color: white;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    padding: 12px 15px;
+    font-size: 15px;
+}
+
+.collection_card_content h4{
+    font-weight: 400;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    border-radius: 10px;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.5) 50%,
+        rgba(0, 0, 0, 0.02) 85%
+    );
+}
+
+.card1{
+    background: url(images/collection2.jpg);
+}
+
+.card2{
+    background: url(images/collection3.jpg);
+}
+.card3{
+    background: url(images/collection4.jpg);
+}
+
 @media only screen and (max-width: 600px)
 {
     .navbar_menu .navbar_menu_icon{
@@ -57,5 +222,25 @@
     .section_hero{
         height: 80vh;
     }
-}
 
+    .section_hero_content{
+        height: calc(80vh - 60px);
+    }
+
+    .section_hero_input_box{
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+    }
+
+    .section_hero_input_location, .section_hero_input_restaurant{
+        padding: 15px;
+        width: 95%;
+        border-radius: 10px;
+    }
+
+    .section_hero_heading{
+        font-size: 20px;
+        width: 95%;
+    }
+}
