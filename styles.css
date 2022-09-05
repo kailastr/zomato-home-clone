@@ -205,6 +205,221 @@
     background: url(images/collection4.jpg);
 }
 
+.get_the_app{
+    display: flex;
+    background-color: rgb(255, 251, 249);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 3rem 6rem;
+}
+
+.get_the_app .get_app_semi_container{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.get_the_app .get_app_semi_container .get_app_left{
+    flex: 20%;
+}
+
+.get_the_app .get_app_semi_container .get_app_left img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.get_the_app .get_app_semi_container .get_app_right{
+    flex: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+.get_app_right h1{
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.get_app_right p{
+    font-size: 1rem;
+}
+
+.get_app_right .radio_button_container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.get_app_right .radio_button_container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.get_app_right .radio_button_container div input{
+    height: 15px;
+    width: 15px;
+    accent-color: rgb(239, 79, 95);
+}
+
+.get_app_right .type_input{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap
+}
+
+.get_app_right .type_input input, .type_input button{
+    padding: 10px 12px;
+    border-radius: 5px;
+}
+
+.type_input input{
+    border: 1px solid #e0e0e0;
+    flex: auto;
+    outline: none;
+}
+
+.type_input button{
+    border: none;
+    background-color: rgb(239, 120, 56);
+    color: white;
+    cursor: pointer;
+}
+
+.download_app_container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.download_app_container h5{
+    font-weight: 500;
+    color: #666666;
+}
+
+.download_app_container div{
+    display: flex;
+    gap: 1rem;
+}
+
+.download_app_container div img{
+    width: 35%;
+}
+
+.footer{
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+.footer .footer_section1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin:auto;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.footer_section1 img{
+    width: 120px;
+}
+
+.section1_button_container{
+    display: flex;
+    gap: 1rem;
+}
+
+.section1_button_container button{
+    padding: 5px 5px;
+    width: 90px;
+    border: 1px solid gray;
+    background-color: transparent;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.navigation_container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3rem;
+    width: 80%;
+    margin: auto;
+     padding: 3rem 0rem;
+}
+
+.link_container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.link_container h5{
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    letter-spacing: 0.8px;
+}
+
+.footer_link{
+    text-decoration: none;
+    color: gray;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.footer_link:hover{
+    color: black;
+}
+
+.social_link_container{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.social_link_container button{
+    background-color: black;
+    border-radius: 100%;
+    border: none;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_link_container button i{
+    color: white;
+    font-size: 13px;
+}
+
+.footer_section_logo{
+    width: 100%;
+}
+
+.disclaimer{
+    width: 90%;
+    color: gray;
+    border-top: 1px solid gray;
+    margin: auto;
+    padding: 2rem 0;
+    font-size: 12px;
+}
+
 @media only screen and (max-width: 600px)
 {
     .navbar_menu .navbar_menu_icon{
@@ -242,5 +457,59 @@
     .section_hero_heading{
         font-size: 20px;
         width: 95%;
+    }
+}
+
+/* media querry for get the app portion */
+@media only screen and (max-width: 1300px){
+    .get_app_left, .get_app_right{
+        flex: 1;
+    }
+
+    .get_the_app .get_app_semi_container{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .get_the_app{
+        padding: 1rem;
+    }
+
+    .get_the_app .get_app_semi_container{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .get_the_app{
+        padding: 3rem 0;
+    }
+
+    .get_the_app .get_app_semi_container{
+        width: 90%;
+        flex-direction: column;
+    }
+}
+
+/* media queryy for footer grid */
+@media only screen and (max-width: 900px){
+    .navigation_container{
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .navigation_container{
+        grid-template-columns: 1fr 1fr;
+        
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .navigation_container{
+        grid-template-columns: 1fr;
+        
     }
 }
